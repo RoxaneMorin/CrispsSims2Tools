@@ -1,0 +1,38 @@
+// https://themeasureofasim.tumblr.com/post/652535001612795904/overlay-boxes-a-questionable-tutorial
+
+// Relevant resources to overlays:
+/*
+ * BINX : need new groups. Don't seem to be referred to by anything, but have matching instances with some 3IDRs.
+ * 
+ * 3IDR : most need new groups, updated references.
+ *        The one with group = 0x4F184AA9 should have its instance updated instead.
+ *        Out of package references should not be changed.
+ * 
+ * GZPS & XTOL : need new groups, new families; referred to by some 3IDRs.
+ * 
+ * STR : should be one. Need new group, new/updated content. Referred to by some 3IDRs.
+ * 
+ * TXMT : need new groups, new names & descriptions, TGI fix. Referred to by some 3IDRs.
+ * TXTR : need new groups, new names, TGI fix. Referred to by TXMTs.
+ *        How to handle references to exterior textures?
+ * 
+ * The names of GZPSs & XTOL, TXMTs, contents of STR should match.
+ * 
+ * COLL : should be one, group = 0x4F184AA9, instance set to the new general groupID; referred to by some 3IDRs.
+*/
+
+// How to extract the similarities between the named stuff?
+// We assume
+//##[group id]![specific name, potentially multiple split with _][potentially _ and type extension]
+/*
+ * txtrs may not have the group id thing if they are a default replacement.
+ * txtr, txmt have the extention on their names.
+ * however, the references/internal stuff in txmts shouldn't use them.
+ * cpfs and the stuff from str do not.
+ * 
+ * So:
+ * regex to match/break away the group id section
+ * split the rest based on _, look at the last thingie in case of the txtr and txmt
+ * or only split the last _ based on regex?
+ * option to add or replace smt in the names themselves?
+ */
