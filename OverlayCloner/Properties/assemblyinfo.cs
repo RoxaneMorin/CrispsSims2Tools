@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Roxane Morin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1+1258cc4af335614daf6f5cb3f61bfafaeb22ce64")]
 [assembly: System.Reflection.AssemblyProductAttribute("Crisps\' Overlay Package Cloner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrispsOverlayPackageCloner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1")]
