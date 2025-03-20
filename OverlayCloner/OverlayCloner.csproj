@@ -17,7 +17,13 @@
     <SignAssembly>False</SignAssembly>
 	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 	<GeneratedAssemblyInfoFile>Properties/assemblyinfo.cs</GeneratedAssemblyInfoFile>
+	<PackageIcon>icon.png</PackageIcon>
+	<ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="DbpfLibrary">
@@ -44,6 +50,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
